@@ -31,8 +31,10 @@ console.log (heartRate < 100 ? "Boost needed!" : "Energy levels are high!")
 // Monster Energy drinks are best served cold. Given the current temperature, use a ternary to print "Chilled to perfection!" 
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
 
-let currentTemp = 4; // Current temperature in °C
-console.log(``);
+let currentTemp = -1; // Current temperature in °C
+//console.log(`${currentTemp <= 5 ? "Chilled to perfection" : "Needs a cooler"}`);
+console.log (currentTemp <= 5 ? "Chilled to perfection"  : "Needs a cooler");
+
 
 
 // #### Challenge 5: Late Night Coding Session
@@ -41,8 +43,16 @@ console.log(``);
 // otherwise, print "Better stick to water."
 
 // Define the current hour in 24-hour format
-let currentHour = 22; 
+let currentHour = 1; 
 
+//console.log(`${currentHour >= 7 && currentHour < 24 ? "Unleash the beast!" : "Better stick to water" }`); 
+
+if (currentHour <= 7 && currentHour< 24) {
+    console.log("Unleash the Beast")
+}
+else {
+    console.log("Better stick to water")
+}
 // Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
 // Otherwise, print "Better stick to water."
