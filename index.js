@@ -5,6 +5,7 @@
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
 let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
+//console.log(`${userPreference ? userPreference : "Regular"})
 console.log(userPreference ? userPreference : "Regular");
 
 
@@ -12,17 +13,19 @@ console.log(userPreference ? userPreference : "Regular");
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
-let cansLeft = 3; // Any number of cans
-console.log(cansLeft < 5 ? " Time to restock" : "We're stocked" );
+let cansLeft = 7; // Any number of cans
+console.log(`${cansLeft < 5 ? "Time to restock" : "We're stocked"}`)
+//console.log(cansLeft < 5 ? "Time to restock" : "We're stocked" );
 
 
 // #### Challenge 3: Workout Intensity
 // Based on the current heart rate, determine if the user should drink a Monster Energy drink to boost their workout. 
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
-let heartRate = 95; // Current heart rate in bpm
-console.log(`'}`);
+ let heartRate = 150; // Current heart rate in bpm
 
+ //console.log(`${heartRate < 100 ? "Boost needed" : "Energy levels are high!"}`);
+console.log (heartRate < 100 ? "Boost needed!" : "Energy levels are high!")
 
 // #### Challenge 4: Temperature Suitability
 // Monster Energy drinks are best served cold. Given the current temperature, use a ternary to print "Chilled to perfection!" 
