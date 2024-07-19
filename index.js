@@ -6,6 +6,8 @@
 
 let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
 //console.log(`${userPreference ? userPreference : "Regular"})
+//let userPreference = ""; // Possible values: 'Regular', 'Sugar-free', or undefined
+//userPreference === "Regular" || userPreference === undefined ? console.log("The user prefers Regular"): userPreference === "Sugar-free" ? console.log("The user prefers Sugar-free"): console.log("Invalid user preference");
 console.log(userPreference ? userPreference : "Regular");
 
 
@@ -45,14 +47,14 @@ console.log (currentTemp <= 5 ? "Chilled to perfection"  : "Needs a cooler");
 // Define the current hour in 24-hour format
 let currentHour = 1; 
 
-//console.log(`${currentHour >= 7 && currentHour < 24 ? "Unleash the beast!" : "Better stick to water" }`); 
+console.log(`${currentHour >= 7 && currentHour < 24 ? "Unleash the beast!" : "Better stick to water" }`); 
 
-if (currentHour <= 7 && currentHour< 24) {
-    console.log("Unleash the Beast")
-}
-else {
-    console.log("Better stick to water")
-}
+//if (currentHour <= 7 && currentHour< 24) {
+  //  console.log("Unleash the Beast")
+//}
+//else {
+  //  console.log("Better stick to water")
+//}
 // Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
 // Otherwise, print "Better stick to water."
@@ -65,3 +67,4 @@ else {
 // In each of these challenges, the ternary operator is used to decide between two options based on a condition, 
 // demonstrating its utility for concise conditional logic. Remember that while ternaries can make the code more succinct, 
 // they should be used judiciously to maintain readability, especially for more complex conditions.
+
